@@ -19,6 +19,7 @@ base_url = os.path.abspath(os.path.dirname(__file__))
 
 #数据库路径
 #SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'test.db')
-SQLALCHEMY_DATABASE_URI = 'mysql://root:123456@192.16.10.140/test'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:123456@192.168.10.140/test?charset=utf8'
+#SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:xxxxx@localhost:3306/test?charset=utf8'
 #数据文件存储
 #SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
